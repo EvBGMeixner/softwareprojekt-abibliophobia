@@ -4,10 +4,8 @@ public class Buch extends RECHTECK
     double höhe;
     
     public Buch()
-    {
-       breite= 5;
-       höhe= 3;
-       setzeFarbe("braun");
+    { super(1.5,2);
+      setzeFarbe("braun" );
        
     }
 
