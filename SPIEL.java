@@ -294,7 +294,8 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     @Override
     public void tasteReagieren( int taste ) 
     {
-        System.out.println( "Taste mit Kuerzel " + taste + " wurde gedrueckt" );
+        System.out.println( "Taste mit Kuerzel " + taste + " wurde gedrueckt");
+        
     }
     
     

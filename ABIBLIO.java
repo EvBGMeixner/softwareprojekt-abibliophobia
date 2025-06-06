@@ -1,0 +1,31 @@
+
+
+public class ABIBLIO extends SPIEL
+{
+    Buch buch;
+    SpeziellesBuch SpBuch;
+    SuperBuch SuBuch;
+    Bibliothekarin spieler;
+
+    
+    public ABIBLIO()
+    {
+        
+    }
+
+    
+    
+    public int beispielMethode()
+    {
+     return 0;   
+    }
+    
+    public void tasteReagieren (int taste) {
+        if (taste == 39) {
+            spieler.bewegeNachLinks();
+        }
+        if (taste == 37) {
+            spieler.bewegeNachRechts();
+        }
+    }
+}
