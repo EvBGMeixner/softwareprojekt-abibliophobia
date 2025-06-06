@@ -15,8 +15,7 @@ public class SpeziellesBuch extends Buch
      */
     public SpeziellesBuch()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        setzeFarbe("blau");
     }
 
     /**
