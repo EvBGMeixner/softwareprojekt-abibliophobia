@@ -28,4 +28,12 @@ public class ABIBLIO extends SPIEL
             spieler.bewegeNachRechts();
         }
     }
+    public void tasteLosgelassenReagieren (int taste) {
+        if (taste != 37) {
+            spieler.anhalten();
+        }
+        if (taste != 39) {
+            spieler.anhalten();
+        }
+    }
 }

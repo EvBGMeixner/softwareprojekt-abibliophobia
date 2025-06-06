@@ -6,7 +6,7 @@ public class Bücherwurm extends FIGUR
 
     
     public Bücherwurm( String zustandName , String gifPfad )
-    {  zustandName = _zustandName;
+    {  super( zustandName , gifPfad );
         
         
     }
@@ -15,6 +15,6 @@ public class Bücherwurm extends FIGUR
     public int beispielMethode()
     {
         
-        
+      return 0;  
     }
 }
