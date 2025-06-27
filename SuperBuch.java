@@ -13,10 +13,9 @@ public class SuperBuch extends SpeziellesBuch
     /**
      * Konstruktor für Objekte der Klasse SuperBuch
      */
-    public SuperBuch()
+    public SuperBuch(String zustandName ,String gifPfad)
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        super( zustandName , gifPfad );
     }
 
     /**

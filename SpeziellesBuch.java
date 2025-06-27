@@ -13,9 +13,11 @@ public class SpeziellesBuch extends Buch
     /**
      * Konstruktor für Objekte der Klasse SpeziellesBuch
      */
-    public SpeziellesBuch()
+    public SpeziellesBuch(String zustandName ,String gifPfad )
     {
-        setzeFarbe("blau");
+        super( zustandName , gifPfad );
+        //setzeFarbe("blau");
+        
     }
 
     /**
