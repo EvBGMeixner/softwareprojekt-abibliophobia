@@ -5,13 +5,15 @@ public class Bibliothekarin extends FIGUR
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
     private int x;
     double deltaX;
-
+    
   
     public  Bibliothekarin( String zustandName , String gifPfad )
     {
         super( zustandName , gifPfad );
         x = 0;
         deltaX = 0;
+        
+    
     }
 
     
