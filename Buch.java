@@ -1,4 +1,4 @@
-public class Buch extends RECHTECK 
+public class Buch extends RECHTECK
 {
     double breite;
     double höhe;
