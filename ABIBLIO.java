@@ -6,10 +6,11 @@ public class ABIBLIO extends SPIEL
     SpeziellesBuch SpBuch;
     SuperBuch SuBuch;
     Bibliothekarin spieler;
+    
 
     
     public ABIBLIO()
-    {
+    { new RECHTECK(6,4);
         
     }
 
