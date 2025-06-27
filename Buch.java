@@ -1,11 +1,13 @@
-public class Buch extends RECHTECK 
+public class Buch extends FIGUR
 {
+    //höhe: 1.5,2
+    
     double breite;
     double höhe;
     
-    public Buch()
-    { super(1.5,2);
-      setzeFarbe("braun" );
+    public Buch(String zustandName ,String gifPfad )
+    { super( zustandName , gifPfad );
+      
        
     }
 
