@@ -5,9 +5,10 @@ public class ABIBLIO extends SPIEL
     Buch buch;
     Bibliothekarin spieler;
     BODEN boden;
+    BODEN [] böden;
     
     public ABIBLIO()
-    {   new RECHTECK(6,4);
+    {   
         String zustandName ;
         String gifPfad ;
     
@@ -15,8 +16,14 @@ public class ABIBLIO extends SPIEL
         //buch=new Buch( "bu" , gifPfad);
         //spezi=new SpeziellesBuch("spbu", gifPfad);
         //superb=new SuperBuch("subu", gifPfad);
-        boden=new BODEN();
-    
+        böden=new BODEN[20];
+        
+        for ( int i=0; i<10; i++){
+            böden[i]= new BODEN(1,-7.5);
+            böden[i+5]= new BODEN((1+i),-7.5);
+            böden[i+10]= new BODEN((2+i),-7.5);
+            
+        }
     
    
     
