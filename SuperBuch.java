@@ -1,10 +1,4 @@
 
-/**
- * Beschreiben Sie hier die Klasse SuperBuch.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class SuperBuch extends SpeziellesBuch
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
