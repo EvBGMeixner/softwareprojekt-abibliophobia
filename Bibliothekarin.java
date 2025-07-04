@@ -39,9 +39,9 @@ public class Bibliothekarin extends FIGUR
         return x + y;
     }
     
-    aktivMachen() {
+    //aktivMachen() {
         
-    }
+    //}
     // void getImage() {
         
     //}
