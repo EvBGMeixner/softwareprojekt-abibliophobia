@@ -9,7 +9,7 @@ public class Bibliothekarin extends FIGUR
   
     public  Bibliothekarin( String zustandName , String gifPfad )
     {
-        super( zustandName , gifPfad );
+        super( zustandName , gifPfad);
         x = 0;
         deltaX = 0;
         

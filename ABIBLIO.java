@@ -7,17 +7,20 @@ public class ABIBLIO extends SPIEL
     SpeziellesBuch spezi;
     SuperBuch superb;
     Bibliothekarin spieler;
-    BODEN boden;
+    
+    BODEN [] hinderniss;
     
     String zustandName ;
     String gifPfad ;
     public ABIBLIO(){
          zeigeKoordinatensystem(true);
         //buch=new Buch( "bu" , gifPfad);
-        //spezi=new SpeziellesBuch("spbu", gifPfad);
-        //superb=new SuperBuch("subu", gifPfad);
-        boden=new BODEN();
         
+        hinderniss = new BODEN[200];
+        
+        for (int i=0;i<50;i++){
+            hinderniss[i]= new BODEN(-15+(i*4),-10);
+        }
     }
     
     public int beispielMethode()
