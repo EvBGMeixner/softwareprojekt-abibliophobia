@@ -1,11 +1,13 @@
 
 public class ABIBLIO extends SPIEL
 {
-    Buch buch;
-    SpeziellesBuch SpBuch;
-    SuperBuch SuBuch;
-    Bibliothekarin spieler;
 
+    Buch buch;
+    SpeziellesBuch spezi;
+    SuperBuch superb;
+    Bibliothekarin spieler;
+    BODEN boden;
+    
     public ABIBLIO()
     {   new RECHTECK(6,4);
         String zustandName ;
@@ -17,6 +19,12 @@ public class ABIBLIO extends SPIEL
         //superb=new SuperBuch("subu", gifPfad);
         boden=new BODEN();
     
+    
+   
+    
+    
+    
+
     }
     
     public int beispielMethode()
