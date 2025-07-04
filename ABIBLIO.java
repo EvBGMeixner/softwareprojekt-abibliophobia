@@ -14,14 +14,15 @@ public class ABIBLIO extends SPIEL
     
          zeigeKoordinatensystem(true);
         //buch=new Buch( "bu" , gifPfad);
-        //spezi=new SpeziellesBuch("spbu", gifPfad);
-        //superb=new SuperBuch("subu", gifPfad);
-        böden=new BODEN[20];
+        
+        böden=new BODEN [10];
+        
         
         for ( int i=0; i<10; i++){
-            böden[i]= new BODEN(1,-7.5);
-            böden[i+5]= new BODEN((1+i),-7.5);
-            böden[i+10]= new BODEN((2+i),-7.5);
+            böden[i]= new BODEN(-13+(i*5),-7.5);
+            böden[i+1]= new BODEN(-13+(i*5),-7.5);
+            //böden[i+2]= new BODEN(-13+(i*5),-7.5);
+            
             
         }
     
