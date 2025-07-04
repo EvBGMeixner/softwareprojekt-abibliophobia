@@ -18,6 +18,7 @@ public class ABIBLIO extends SPIEL
     
          zeigeKoordinatensystem(true);
         //buch=new Buch( "bu" , gifPfad);
+<<<<<<< HEAD
 
 
         spieler=new Bibliothekarin("bu" , "Herunterladen");
@@ -25,6 +26,11 @@ public class ABIBLIO extends SPIEL
 
         hinderniss = new BODEN[200];
 
+=======
+        
+        böden=new BODEN [10];
+        
+>>>>>>> a0dc2eade5caa96734a1c7d15015a63d176c97d0
         
         böden=new BODEN [10];
         
