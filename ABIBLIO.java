@@ -3,8 +3,6 @@ public class ABIBLIO extends SPIEL
 {
 
     Buch buch;
-    SpeziellesBuch spezi;
-    SuperBuch superb;
     Bibliothekarin spieler;
     BODEN boden;
     
