@@ -1,4 +1,5 @@
 public class Buch extends FIGUR
+
 {
     //höhe: 1.5,2
     

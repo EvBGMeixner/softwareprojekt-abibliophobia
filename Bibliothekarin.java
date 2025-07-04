@@ -9,7 +9,7 @@ public class Bibliothekarin extends FIGUR
   
     public  Bibliothekarin( String zustandName , String gifPfad )
     {
-        super( zustandName , gifPfad);
+        super( "aktiv" , "Hintergrund");
         x = 0;
         deltaX = 0;
         
@@ -39,4 +39,10 @@ public class Bibliothekarin extends FIGUR
         return x + y;
     }
     
+    aktivMachen() {
+        
+    }
+    // void getImage() {
+        
+    //}
 }
