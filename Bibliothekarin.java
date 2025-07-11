@@ -24,11 +24,11 @@ public class Bibliothekarin extends FIGUR
     }
     
     void bewegeNachLinks() {
-        deltaX = -0.2;
+        deltaX = -2;
     }
     
     void bewegeNachRechts() {
-        deltaX = 0.2;
+        deltaX = 02;
     }
     
     void anhalten() {

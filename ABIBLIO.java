@@ -28,7 +28,7 @@ public class ABIBLIO extends SPIEL
 
         hinderniss = new BODEN[200];
         spieler.setzeMittelpunkt(-10,9);
-        
+        spieler.bewegen();
 
         
         böden=new BODEN [10];
@@ -62,16 +62,20 @@ public class ABIBLIO extends SPIEL
 
     public void tasteReagieren (int taste) {
         if (taste == 39) {
-            spieler.bewegeNachLinks();
+            
+            spieler.bewegeNachRechts();
+            spieler.bewegen();
         }
         if (taste == 37) {
-            spieler.bewegeNachRechts();
+            spieler.bewegeNachLinks();
+            spieler.bewegen();
         }
     }
 
     public void tasteLosgelassenReagieren (int taste) {
         if (taste != 37 ||taste != 39) {
             spieler.anhalten();
+            
         }
         
     }
