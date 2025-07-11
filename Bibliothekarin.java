@@ -17,7 +17,7 @@ public class Bibliothekarin extends FIGUR
         
     }
     
-    public  boolean stehtAuf(ziel1);
+    //public  boolean stehtAuf(ziel1);
         
     
     
