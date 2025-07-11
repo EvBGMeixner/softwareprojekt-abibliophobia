@@ -25,6 +25,7 @@ public class BODEN extends RECHTECK
         setzeFarbe("grau");
 
         setzeMittelpunkt(x,y);
+        machePassiv();
 
     }
 

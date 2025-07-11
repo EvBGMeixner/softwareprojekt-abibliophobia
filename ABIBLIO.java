@@ -23,8 +23,10 @@ public class ABIBLIO extends SPIEL
         //zier=new TEXT("ZIEL ERREICHT");
         
 
-        spieler=new Bibliothekarin("Herunterladen.png");
+        spieler=new Bibliothekarin("spieler.png");
+        spieler.skaliere( 0.25 );
         böden=new BODEN[20];
+        
 
         hinderniss = new BODEN[200];
         spieler.setzeMittelpunkt(-10,9);
@@ -61,7 +63,7 @@ public class ABIBLIO extends SPIEL
     }
 
     public void tasteReagieren (int taste) {
-        if (taste == 39) {
+        if (istTasteGedrueckt(39)) {
             
             spieler.bewegeNachRechts();
             spieler.bewegen();
@@ -70,13 +72,16 @@ public class ABIBLIO extends SPIEL
             spieler.bewegeNachLinks();
             spieler.bewegen();
         }
+        if(taste == TASTE.RAUF){
+            spieler.springe(12);
+        }
     }
 
     public void tasteLosgelassenReagieren (int taste) {
-        if (taste != 37 ||taste != 39) {
+        /*if (taste != 37 ||taste != 39) {
             spieler.anhalten();
             
-        }
+        }*/
         
     }
     
