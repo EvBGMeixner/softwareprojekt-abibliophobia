@@ -8,7 +8,7 @@ public class ABIBLIO extends SPIEL
     BODEN [] hinderniss;
 
     BODEN boden;
-    BODEN [] böden;
+    BODEN böden;
     ZIEL ziel1;
     
     public ABIBLIO()
@@ -25,20 +25,22 @@ public class ABIBLIO extends SPIEL
 
         spieler=new Bibliothekarin("spieler.png");
         spieler.skaliere( 0.25 );
-        böden=new BODEN[20];
         
-
-        hinderniss = new BODEN[200];
         spieler.setzeMittelpunkt(-10,9);
         spieler.bewegen();
 
         
-        böden=new BODEN [10];
+        hinderniss = new BODEN[200];
+        //böden=new BODEN [10];
         
+        böden= new BODEN(-15,-9.5,70,1);
 
         
-        for (int i=0;i<50;i++){
-            hinderniss[i]= new BODEN(-15+(i*4),-10);
+        for (int i=0;i<3;i++){
+           
+           
+           hinderniss[i]=new BODEN(-6+(i*7.5),-2.5+(i*4),5,1);
+           
         }
 
         //for ( int i=0; i<10; i++){
@@ -77,7 +79,7 @@ public class ABIBLIO extends SPIEL
         }
     }
 
-    public void tasteLosgelassenReagieren (int taste) {
+    /*public void tasteLosgelassenReagieren (int taste) {
         /*if (taste != 37 ||taste != 39) {
             spieler.anhalten();
             
@@ -88,5 +90,5 @@ public class ABIBLIO extends SPIEL
     
     
     
-    }
+    
 

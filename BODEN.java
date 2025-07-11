@@ -7,20 +7,20 @@ public class BODEN extends RECHTECK
     
 
 
-    public BODEN(double x, double y)
+    public BODEN(double x, double y, double x1, double y1)
 
     { 
-        super(5,2);
+        //super(5,2);
         
         machePassiv();
         
         deltaX = 0;
         setzeMittelpunkt(x,y);
-        setzeGroesse(2.5, 2);
+        setzeGroesse(x1, y1);
 
         
 
-        setzeGroesse(5, 2);
+        //setzeGroesse(5, 2);
 
         setzeFarbe("grau");
 
