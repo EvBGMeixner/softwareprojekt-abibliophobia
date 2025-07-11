@@ -19,7 +19,10 @@ public class ABIBLIO extends SPIEL
          zeigeKoordinatensystem(true);
         //buch=new Buch( "bu" , gifPfad);
         
-        ziel1=new ZIEL();
+        ziel1=new ZIEL("OIP-3762536241.png");
+        ziel1.skaliere( 0.25 );
+        ziel1.setzeMittelpunkt(10,7.1);
+        
         //zier=new TEXT("ZIEL ERREICHT");
         
 
@@ -51,7 +54,9 @@ public class ABIBLIO extends SPIEL
             
         //}
     
-   
+        
+         
+     
     
         
     
@@ -84,6 +89,7 @@ public class ABIBLIO extends SPIEL
             spieler.anhalten();
             
         }*/
+     
         
     }
     

@@ -14,9 +14,11 @@ public class Bibliothekarin extends FIGUR
         deltaX = 0;
         macheAktiv();
         
-    
+        
     }
     
+    public  boolean stehtAuf(ziel1);
+        
     
     
     void bewegen() {
