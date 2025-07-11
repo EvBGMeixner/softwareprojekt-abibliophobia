@@ -7,15 +7,17 @@ public class Bibliothekarin extends FIGUR
     double deltaX;
     
   
-    public  Bibliothekarin( String zustandName , String gifPfad )
+    public  Bibliothekarin(String gifPfad )
     {
-        super( "aktiv" , "Hintergrund");
+        super(gifPfad);
         x = 0;
         deltaX = 0;
+        macheAktiv();
         
     
     }
-
+    
+    
     
     void bewegen() {
         verschiebenUm(deltaX, 0);

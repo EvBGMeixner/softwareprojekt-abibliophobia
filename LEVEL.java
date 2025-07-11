@@ -16,7 +16,7 @@
 import ea.edu.EduActor;
 import ea.edu.Figur;
 
-public class LEVEL
+public class LEVEL extends ABIBLIO
 implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, BildAktualisierungReagierbar {
 
     private static SPIEL s;

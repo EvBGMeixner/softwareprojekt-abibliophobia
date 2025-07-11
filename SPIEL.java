@@ -85,6 +85,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
     public SPIEL( int fensterBreite, int fensterHoehe, boolean maus ) 
     {
         setzeFensterGroesse( fensterBreite , fensterHoehe );
+        
         //Zaehler fuer Tick, Tack, ...
         zaehler = 0;
         //Maus ggf. aktivieren
@@ -102,6 +103,7 @@ implements TastenReagierbar, Ticker, MausKlickReagierbar, MausRadReagierbar, Bil
         } catch(Exception e){
             //e.printStackTrace();
         }
+        
     }
     
     

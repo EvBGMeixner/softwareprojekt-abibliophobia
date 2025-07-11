@@ -1,7 +1,7 @@
 
 public class ABIBLIO extends SPIEL
 {
-
+    TEXT zier;
     Buch buch;
     Bibliothekarin spieler;
     
@@ -9,7 +9,7 @@ public class ABIBLIO extends SPIEL
 
     BODEN boden;
     BODEN [] böden;
-
+    ZIEL ziel1;
     
     public ABIBLIO()
     {   
@@ -18,19 +18,18 @@ public class ABIBLIO extends SPIEL
     
          zeigeKoordinatensystem(true);
         //buch=new Buch( "bu" , gifPfad);
-<<<<<<< HEAD
+        
+        ziel1=new ZIEL();
+        //zier=new TEXT("ZIEL ERREICHT");
+        
 
-
-        spieler=new Bibliothekarin("bu" , "Herunterladen");
+        spieler=new Bibliothekarin("Herunterladen.png");
         böden=new BODEN[20];
 
         hinderniss = new BODEN[200];
+        spieler.setzeMittelpunkt(-10,9);
+        
 
-=======
-        
-        böden=new BODEN [10];
-        
->>>>>>> a0dc2eade5caa96734a1c7d15015a63d176c97d0
         
         böden=new BODEN [10];
         
@@ -40,17 +39,17 @@ public class ABIBLIO extends SPIEL
             hinderniss[i]= new BODEN(-15+(i*4),-10);
         }
 
-        for ( int i=0; i<10; i++){
-            böden[i]= new BODEN(-13+(i*5),-7.5);
-            böden[i+1]= new BODEN(-13+(i*5),-7.5);
+        //for ( int i=0; i<10; i++){
+           // böden[i]= new BODEN(-13+(i*5),-7.5);
+            //böden[i+1]= new BODEN(-13+(i*5),-7.5);
             //böden[i+2]= new BODEN(-13+(i*5),-7.5);
             
             
-        }
+        //}
     
    
     
-    
+        
     
 
 
@@ -71,11 +70,14 @@ public class ABIBLIO extends SPIEL
     }
 
     public void tasteLosgelassenReagieren (int taste) {
-        if (taste != 37) {
+        if (taste != 37 ||taste != 39) {
             spieler.anhalten();
         }
-        if (taste != 39) {
-            spieler.anhalten();
-        }
+        
     }
-}
+    
+    
+    
+    
+    }
+

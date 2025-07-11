@@ -12,7 +12,8 @@ public class BODEN extends RECHTECK
     { 
         super(5,2);
         
-
+        machePassiv();
+        
         deltaX = 0;
         setzeMittelpunkt(x,y);
         setzeGroesse(2.5, 2);
