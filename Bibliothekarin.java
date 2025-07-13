@@ -2,25 +2,22 @@
 
 public class Bibliothekarin extends FIGUR
 {
-    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
     double deltaX;
     
   
     public  Bibliothekarin(String gifPfad )
     {
-        super(gifPfad);
-        x = 0;
+        super("spieler.png");
+        
         deltaX = 0;
         macheAktiv();
-        
-        
     }
-    
-    //public  boolean stehtAuf(ziel1);
         
-    
-    
+    public boolean beruehrt( FIGUR ea ) 
+    {
+        return super.schneidet( ea );
+    }
+
     void bewegen() {
         verschiebenUm(deltaX, 0);
     }
@@ -37,16 +34,8 @@ public class Bibliothekarin extends FIGUR
         deltaX = 0;
     }
 
-    public int beispielMethode(int y)
-    {
-        // tragen Sie hier den Code ein
-        return x + y;
-    }
     
-    //aktivMachen() {
-        
-    //}
-    // void getImage() {
-        
-    //}
+    
+    
 }
+

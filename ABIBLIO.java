@@ -1,6 +1,8 @@
 
 public class ABIBLIO extends SPIEL
 {
+    /**ist jetzt hier unser sogenanntes lvl 1(gibt auch kein zweites)**/
+    
     TEXT zier;
     Buch buch;
     Bibliothekarin spieler;
@@ -13,61 +15,38 @@ public class ABIBLIO extends SPIEL
     
     public ABIBLIO()
     {   
-        String zustandName ;
-        String gifPfad ;
-    
-         zeigeKoordinatensystem(true);
-        //buch=new Buch( "bu" , gifPfad);
+        zeigeKoordinatensystem(true);
         
         ziel1=new ZIEL("OIP-3762536241.png");
         ziel1.skaliere( 0.25 );
-        ziel1.setzeMittelpunkt(10,7.1);
-        
-        //zier=new TEXT("ZIEL ERREICHT");
-        
+        ziel1.setzeMittelpunkt(10,6.1);
 
         spieler=new Bibliothekarin("spieler.png");
         spieler.skaliere( 0.25 );
         
         spieler.setzeMittelpunkt(-10,9);
         spieler.bewegen();
-
         
         hinderniss = new BODEN[200];
-        //böden=new BODEN [10];
-        
         böden= new BODEN(-15,-9.5,70,1);
 
-        
         for (int i=0;i<3;i++){
            
            
-           hinderniss[i]=new BODEN(-6+(i*7.5),-2.5+(i*4),5,1);
+           hinderniss[i]=new BODEN(-6+(i*7.5),-3.5+(i*4),5,1);
            
         }
 
-        //for ( int i=0; i<10; i++){
-           // böden[i]= new BODEN(-13+(i*5),-7.5);
-            //böden[i+1]= new BODEN(-13+(i*5),-7.5);
-            //böden[i+2]= new BODEN(-13+(i*5),-7.5);
+        if(spieler.beruehrt( ziel1)=true){
             
-            
-        //}
-    
+            zier=new TEXT(-5 , 0 , 3 ,"ZIEL ERREICHT");
+            zier.setzeFarbe( "rot" );
+        }
         
-         
-     
-    
         
-    
-
-
     }
     
-    public int beispielMethode()
-    {
-        return 0;   
-    }
+    
 
     public void tasteReagieren (int taste) {
         if (istTasteGedrueckt(39)) {
@@ -82,15 +61,20 @@ public class ABIBLIO extends SPIEL
         if(taste == TASTE.RAUF){
             spieler.springe(12);
         }
-    }
-
-    /*public void tasteLosgelassenReagieren (int taste) {
-        /*if (taste != 37 ||taste != 39) {
-            spieler.anhalten();
-            
-        }*/
+    } 
      
-        
+    /**hab jetzt größtenteils alles alleine gemacht(Miriam)
+       * Anna kann da eigentlch nichts für, wegen Umständen
+       * wollte es nur mal gesagt haben
+       * 
+       * Ich versteh auch nict warum der code für den text nicht funktioniert
+       * aber ist halt jetzt so
+       * deswegen halt kein definiertes ende
+       * bin jetzt fertig(13/07/2025-23:30)
+       * (soweit man das sagen kann(das mit dem zieltext funktioniert immer noch nicht))
+       * (ich versteh das nicht, es ergibt alles keinen sinn)
+       **/  
+      
     }
     
     
