@@ -151,11 +151,7 @@ public class ABIBLIO extends SPIEL
         anzeigeBücher.setzeInhalt("BÜCHER:"+gesammelteBücher);
     }
     
-    /**hab jetzt größtenteils alles alleine gemacht(Miriam)
-     * Anna kann da eigentlch nichts für, wegen Umständen
-     * wollte es nur mal gesagt haben
-     * (sie brauhćht aber die note)
-     **/  
+    
 
 }
 
