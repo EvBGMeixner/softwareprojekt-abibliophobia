@@ -18,10 +18,7 @@ public class Bibliothekarin extends FIGUR
         return super.schneidet( ea );
     }
     
-    public boolean beinhaltetPunkt( double x , double y ) 
-    {
-        return super.beinhaltetPunkt( x , y );
-    }
+    
     
     void bewegen() {
         verschiebenUm(deltaX, 0);
